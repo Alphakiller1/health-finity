@@ -25,7 +25,7 @@ export default async function LoginPage({
     <main className="hq-onboard">
       <header className="hq-page-head">
         <p className="hq-label">{tester ? "Tester access" : "Welcome"}</p>
-        <h1 className="hq-onboard__question">Start your HealthQuest</h1>
+        <h1 className="hq-onboard__question">Get started</h1>
         <p className="hq-secondary">For adults 18 and older in the United States.</p>
       </header>
 

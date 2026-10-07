@@ -15,7 +15,7 @@ function secret(): string {
     if (!testerModeEnabled()) throw new Error("Demo sessions are disabled in production.");
     return process.env.TESTER_SESSION_SECRET as string;
   }
-  return process.env.DEMO_SESSION_SECRET ?? "dev-only-healthquest-demo-secret";
+  return process.env.DEMO_SESSION_SECRET ?? "dev-only-health-finity-demo-secret";
 }
 
 function sign(payload: string): string {

@@ -12,7 +12,7 @@ import { encouragement } from "@/lib/moments/encouragement";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Visit questions · HealthQuest" };
+export const metadata: Metadata = { title: "Visit questions · Health-Finity" };
 
 /** Reviewed "ask a clinician" prompts, rephrased as questions in the person's voice. */
 const QUESTION_FOR_CLAIM: Record<string, string> = {
@@ -50,11 +50,11 @@ export default async function VisitPage({
           <p className="hq-label">Visit</p>
           <h1 className="hq-onboard__question">What do you want to ask?</h1>
           <p className="hq-secondary">
-            Write questions for your next appointment. HealthQuest keeps the list; your clinician answers them.
+            Write questions for your next appointment. Health-Finity keeps the list; your clinician answers them.
           </p>
           <details className="hq-about">
             <summary>What is this?</summary>
-            <p>A list of questions to bring to your clinician. HealthQuest keeps the list and can print it; it doesn&rsquo;t answer the questions as medical advice.</p>
+            <p>A list of questions to bring to your clinician. Health-Finity keeps the list and can print it; it doesn&rsquo;t answer the questions as medical advice.</p>
           </details>
         </header>
 

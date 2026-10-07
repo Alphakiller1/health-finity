@@ -54,7 +54,7 @@ An audit found the v1 rules caught 6 of 26 realistic emergencies ("I have really
 
 ## 2026-09-25 — Evidence claims, and answers that work without a model
 
-The model previously saw source ids with no content, so it could not ground anything. `lib/evidence/claims.ts` adds short reviewed claims per source (restating lesson content; no new medical facts). `selectEvidence` picks claims about what was asked or eaten; profile topics reorder those claims but never add unrelated ones, and an off-topic question gets no claims. A model may only state and cite what it is handed, and a citation must be a source handed in for that question. With no OpenAI key — or when the person turned AI off, or hit the daily cap — `createEvidenceAssistant` assembles the answer directly from the selected claims. Nothing is invented and nothing is sent to a third party; the UI labels it "Built from reviewed sources". When no claim matches it says HealthQuest has no reviewed material rather than guessing.
+The model previously saw source ids with no content, so it could not ground anything. `lib/evidence/claims.ts` adds short reviewed claims per source (restating lesson content; no new medical facts). `selectEvidence` picks claims about what was asked or eaten; profile topics reorder those claims but never add unrelated ones, and an off-topic question gets no claims. A model may only state and cite what it is handed, and a citation must be a source handed in for that question. With no OpenAI key — or when the person turned AI off, or hit the daily cap — `createEvidenceAssistant` assembles the answer directly from the selected claims. Nothing is invented and nothing is sent to a third party; the UI labels it "Built from reviewed sources". When no claim matches it says Health-Finity has no reviewed material rather than guessing.
 
 ## 2026-09-25 — OpenAI adapter uses strict structured output and a corrective retry
 
@@ -70,7 +70,7 @@ Requests use `text.format` with a strict JSON schema (optional fields required-b
 
 ## 2026-09-25 — Mobile: nothing moves on focus
 
-An attempt to hide the tab bar and re-pin composers while typing caused taps to land on the wrong element: the field blurs on pointer-down, the layout changes, and the pointer-up hits something else. The e2e journey caught it. The rule now: no layout change on focus or blur. The viewport uses `interactive-widget=resizes-content` and `viewport-fit=cover`, safe-area insets pad the top bar and page, all standalone tap targets are at least 44px, and a web app manifest plus icons let people add HealthQuest to their home screen. There is deliberately no service worker, so no health data is cached offline.
+An attempt to hide the tab bar and re-pin composers while typing caused taps to land on the wrong element: the field blurs on pointer-down, the layout changes, and the pointer-up hits something else. The e2e journey caught it. The rule now: no layout change on focus or blur. The viewport uses `interactive-widget=resizes-content` and `viewport-fit=cover`, safe-area insets pad the top bar and page, all standalone tap targets are at least 44px, and a web app manifest plus icons let people add Health-Finity to their home screen. There is deliberately no service worker, so no health data is cached offline.
 
 ## 2026-09-25 — Production uses USDA's DEMO_KEY until a registered key is added
 

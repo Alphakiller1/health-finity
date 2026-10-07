@@ -10,7 +10,7 @@ import { clearSavedConversations, deleteAccount, signOut, updatePreferences } fr
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Settings · HealthQuest" };
+export const metadata: Metadata = { title: "Settings · Health-Finity" };
 
 export default async function SettingsPage({ searchParams }: { searchParams: Promise<{ error?: string; saved?: string }> }) {
   const user = await requireOnboardedUser();
@@ -119,7 +119,7 @@ export default async function SettingsPage({ searchParams }: { searchParams: Pro
           <p className="hq-secondary" style={{ margin: 0 }}>
             {aiConfigured
               ? "When AI is on, your question and the topics you chose — never your name or email — go to OpenAI's Responses API with storage turned off. "
-              : "No AI provider is connected, so answers are assembled from reviewed sources on HealthQuest's own server. "}
+              : "No AI provider is connected, so answers are assembled from reviewed sources on Health-Finity's own server. "}
             Zero Data Retention is not enabled. Every answer is checked for safety and citations before you see it.
           </p>
           <div className="hq-cluster" style={{ justifyContent: "space-between" }}>
@@ -136,7 +136,7 @@ export default async function SettingsPage({ searchParams }: { searchParams: Pro
 
         <HQSection title="Your data" id="data">
           <p className="hq-secondary" style={{ margin: 0 }}>
-            Download everything HealthQuest stores about you as a readable file, including your profile and logs.
+            Download everything Health-Finity stores about you as a readable file, including your profile and logs.
           </p>
           <div className="hq-cluster" style={{ gap: 12 }}>
             <a className="hq-btn" href="/settings/export">

@@ -1,6 +1,6 @@
 # Product spec
 
-HealthQuest helps adults understand everyday food, movement, sleep, and habits, and prepare questions for a clinician. The first audience is adults 18+ in the United States who may have limited access to care.
+Health-Finity helps adults understand everyday food, movement, sleep, and habits, and prepare questions for a clinician. The first audience is adults 18+ in the United States who may have limited access to care.
 
 The product is general wellness education. It does not diagnose, prescribe, change treatment, interpret drug interactions, or handle emergencies.
 

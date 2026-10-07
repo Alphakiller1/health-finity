@@ -21,7 +21,7 @@ export function createEvidenceAssistant(): HealthAssistantProvider {
 }
 
 export const NOT_COVERED_SUMMARY =
-  "HealthQuest doesn't have reviewed material on that yet, so it won't guess. A clinician or pharmacist is the right person for this one.";
+  "Health-Finity doesn't have reviewed material on that yet, so it won't guess. A clinician or pharmacist is the right person for this one.";
 
 export function composeFromClaims(input: SafeAssistantInput): AssistantResponse {
   const claims = input.claims ?? [];
@@ -37,7 +37,7 @@ export function composeFromClaims(input: SafeAssistantInput): AssistantResponse 
     return {
       status,
       summary: NOT_COVERED_SUMMARY,
-      practicalOptions: ["Browse the lessons for topics HealthQuest has reviewed.", "Write the question down to bring to your next visit."],
+      practicalOptions: ["Browse the lessons for topics Health-Finity has reviewed.", "Write the question down to bring to your next visit."],
       sourceIds: [],
       disclaimer: REQUIRED_DISCLAIMER,
     };
@@ -48,7 +48,7 @@ export function composeFromClaims(input: SafeAssistantInput): AssistantResponse 
   const foodLine = input.food?.description ? `This note is about ${input.food.description}.` : undefined;
   const contextLine =
     status === "education_only"
-      ? "Because of a topic you chose, HealthQuest keeps this to general education rather than personal suggestions."
+      ? "Because of a topic you chose, Health-Finity keeps this to general education rather than personal suggestions."
       : undefined;
 
   return {

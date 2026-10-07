@@ -15,7 +15,7 @@ import { encouragement } from "@/lib/moments/encouragement";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Movement · HealthQuest" };
+export const metadata: Metadata = { title: "Movement · Health-Finity" };
 
 export default async function MovePage({ searchParams }: { searchParams: Promise<{ saved?: string; error?: string; emergency?: string }> }) {
   const user = await requireOnboardedUser();
@@ -33,7 +33,7 @@ export default async function MovePage({ searchParams }: { searchParams: Promise
         <header className="hq-page-head">
           <p className="hq-label">Journal</p>
           <h1 className="hq-onboard__question">What movement did you do?</h1>
-          <p className="hq-secondary">Any movement you chose counts. HealthQuest doesn&rsquo;t estimate calories burned.</p>
+          <p className="hq-secondary">Any movement you chose counts. Health-Finity doesn&rsquo;t estimate calories burned.</p>
         </header>
 
         <JournalTabs current="/move" />

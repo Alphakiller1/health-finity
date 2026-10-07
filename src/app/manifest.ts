@@ -1,13 +1,13 @@
 import type { MetadataRoute } from "next";
 
 /**
- * Lets HealthQuest be added to a phone's home screen and open full screen.
+ * Lets Health-Finity be added to a phone's home screen and open full screen.
  * No service worker: health data is never cached offline (see privacy docs).
  */
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "HealthQuest",
-    short_name: "HealthQuest",
+    name: "Health-Finity",
+    short_name: "Health-Finity",
     description: "Understand one more thing about your health, and take one more step.",
     start_url: "/today",
     scope: "/",

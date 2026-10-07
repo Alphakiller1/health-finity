@@ -26,7 +26,7 @@ export async function GET() {
   return new NextResponse(JSON.stringify(body, null, 2), {
     headers: {
       "Content-Type": "application/json",
-      "Content-Disposition": "attachment; filename=healthquest-export.json",
+      "Content-Disposition": "attachment; filename=health-finity-export.json",
     },
   });
 }

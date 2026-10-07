@@ -13,7 +13,7 @@ import { encouragement } from "@/lib/moments/encouragement";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Rest · HealthQuest" };
+export const metadata: Metadata = { title: "Rest · Health-Finity" };
 
 export default async function HabitsPage({ searchParams }: { searchParams: Promise<{ saved?: string; error?: string }> }) {
   const user = await requireOnboardedUser();

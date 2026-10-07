@@ -7,7 +7,7 @@ import { checkInToday, setQuestAside } from "./actions";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Today · HealthQuest" };
+export const metadata: Metadata = { title: "Today · Health-Finity" };
 
 export default async function TodayPage({ searchParams }: PageProps<"/today">) {
   const user = await requireOnboardedUser();

@@ -24,11 +24,11 @@ body {
 :where(a) {
   color: var(--hq-brand-ink);
   text-underline-offset: 0.2em;
-  text-decoration-thickness: 1px;
+  text-decoration-thickness: 0.08em;
 }
 
 :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
-  outline: 2px solid var(--hq-focus);
+  outline: 3px solid var(--hq-focus);
   outline-offset: 2px;
   border-radius: var(--hq-radius-sm);
 }

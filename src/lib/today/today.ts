@@ -184,7 +184,7 @@ export function focusForToday(
   if (goals.has("move_more") && movement === 0) {
     return {
       title: "Log one movement you choose",
-      why: "A walk or chores counts. HealthQuest does not estimate calories burned.",
+      why: "A walk or chores counts. Health-Finity does not estimate calories burned.",
       href: "/move",
       label: "Log movement",
       symbol: "motion",
@@ -220,7 +220,7 @@ export function focusForToday(
   if (goals.has("prepare_for_visit") && questions === 0) {
     return {
       title: "Write one question for a clinician",
-      why: "HealthQuest stores the question for your visit. It does not answer it as medical advice.",
+      why: "Health-Finity stores the question for your visit. It does not answer it as medical advice.",
       href: "/visit",
       label: "Write a question",
       symbol: "question",
@@ -309,12 +309,12 @@ export function buildToday(store: DemoStore, user: DemoUser, now = new Date()): 
 
   const returning = !checkedInToday && !active.has(today) && active.size > 0;
   const subline = active.size === 0
-    ? "A new day on your HealthQuest. Start wherever feels useful."
+    ? "A new day. Start wherever feels useful."
     : returning
       ? "Welcome back. Your quest continues."
       : active.has(today)
         ? "You showed up today. Small steps count."
-        : "A new day on your HealthQuest.";
+        : "A new day. Start wherever feels useful.";
 
   return {
     focus: focusForToday(store, user, { now, quest: pick, lesson: rankedLesson }),

@@ -12,7 +12,7 @@ import { HQLayer } from "@/components/hq/layers";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Learn · HealthQuest" };
+export const metadata: Metadata = { title: "Learn · Health-Finity" };
 
 const LESSON_XP = XP_VALUES.lesson_completed + XP_VALUES.quiz_completed;
 
@@ -87,7 +87,7 @@ export default async function LearnPage() {
             depth={2}
             level={detail}
             label={`${picks.length > 0 ? "More lessons" : "All lessons"} (${ranked.length - picks.length})`}
-            hint="Everything HealthQuest has reviewed"
+            hint="Everything Health-Finity has reviewed"
           >
           <ul className="hq-lesson-list">
             {ranked

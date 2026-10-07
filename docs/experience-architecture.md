@@ -1,6 +1,6 @@
 # Experience architecture
 
-HealthQuest serves people with very different reading levels, eyesight, confidence with phones, time, and health situations. The structure below is how one app stays simple for someone on day one and useful for someone who wants every number — without two separate products.
+Health-Finity serves people with very different reading levels, eyesight, confidence with phones, time, and health situations. The structure below is how one app stays simple for someone on day one and useful for someone who wants every number — without two separate products.
 
 ## 1. Every screen follows one contract
 
@@ -34,7 +34,7 @@ Every screen is built in layers. A closed layer is always one labelled tap away 
 | Standard | open | closed | 3+ active days, or a lesson finished, or 8+ actions |
 | Detailed | open | open | 10+ active days, 5+ lessons, or 5+ days with 5+ questions |
 
-The level only grows with use, and the thresholds are low so nobody is stuck at Simple. While it is automatic, Today says what is happening ("HealthQuest is keeping things simple for now…") with a link to change it. The person can pick a level in Settings → How much detail?; their choice always wins.
+The level only grows with use, and the thresholds are low so nobody is stuck at Simple. While it is automatic, Today says what is happening ("Health-Finity is keeping things simple for now…") with a link to change it. The person can pick a level in Settings → How much detail?; their choice always wins.
 
 ## 4. Universal design layer
 
@@ -59,9 +59,9 @@ The level only grows with use, and the thresholds are low so nobody is stuck at 
 
 Onboarding is the most important flow: it is the person curating the profile that shapes everything after it.
 
-1. **Welcome** — what HealthQuest is and isn't, three promises (you choose what to share; answers shape what you see, never a score; data isn't sold and can be exported or deleted), the Aa hint, and one choice: **Make it mine** (about 4 minutes) or **Quick start** (about 1 minute).
+1. **Welcome** — what Health-Finity is and isn't, three promises (you choose what to share; answers shape what you see, never a score; data isn't sold and can be exported or deleted), the Aa hint, and one choice: **Make it mine** (about 4 minutes) or **Quick start** (about 1 minute).
 2. **Age first** — under 18 stops immediately, before any health question, and nothing is saved. The server enforces the same rule.
 3. **One question per screen**, each with "Why we ask" and "What this changes". Make it mine asks focus, movement (with a weekly goal that follows the baseline until the person changes it), sleep, food (budget, eating pattern, Gentle Food Mode), health topics, family history, smoking, and detail level. Quick start asks only focus.
 4. **Everything optional can be skipped.** A skipped step is removed from the form, so it saves nothing; revisiting it brings it back empty. An empty profile is not saved, so Today keeps inviting the person to shape it later.
 5. **Sensitive answers respond immediately.** Choosing an eating-disorder history explains, on the spot, that Gentle Food Mode will stay on.
-6. **Review before consent** — "Here's how HealthQuest will work for you" shows the effect of each answer (quest sizes, food settings, topics, detail) with an Edit link that returns straight to the review. Consent comes last, after the person has seen what they're agreeing to store.
+6. **Review before consent** — "Here's how Health-Finity will work for you" shows the effect of each answer (quest sizes, food settings, topics, detail) with an Edit link that returns straight to the review. Consent comes last, after the person has seen what they're agreeing to store.

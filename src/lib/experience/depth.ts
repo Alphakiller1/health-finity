@@ -15,7 +15,7 @@ export type DetailLevel = "simple" | "standard" | "detailed";
 export type Depth = 1 | 2 | 3;
 
 export const DETAIL_LEVELS: { id: "auto" | DetailLevel; label: string; hint: string }[] = [
-  { id: "auto", label: "Grow with me", hint: "Starts simple and adds detail as you use HealthQuest" },
+  { id: "auto", label: "Grow with me", hint: "Starts simple and adds detail as you use Health-Finity" },
   { id: "simple", label: "Simple", hint: "Just the key point and one next step" },
   { id: "standard", label: "Standard", hint: "Key points plus a short explanation" },
   { id: "detailed", label: "Detailed", hint: "Everything open: numbers, sources, and more" },
@@ -58,7 +58,7 @@ export function startsOpen(level: DetailLevel, depth: Depth): boolean {
 /** What the next level adds, so the change is never a surprise. */
 export function nextLevelNote(level: DetailLevel, auto: boolean): string | null {
   if (!auto) return null;
-  if (level === "simple") return "HealthQuest is keeping things simple for now. More detail opens up as you use it.";
+  if (level === "simple") return "Health-Finity is keeping things simple for now. More detail opens up as you use it.";
   if (level === "standard") return "You're seeing short explanations. Sources and numbers open up as you go deeper.";
   return null;
 }

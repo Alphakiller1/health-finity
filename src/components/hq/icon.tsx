@@ -1,7 +1,7 @@
 import type { CSSProperties, ReactNode } from "react";
 
 /*
- * The HealthQuest symbol set. One 24px grid, one 1.75 stroke, round joins.
+ * The Health-Finity symbol set. One 24px grid, one 1.75 stroke, round joins.
  * Drawn for this product so every symbol shares the same slightly human curve.
  */
 

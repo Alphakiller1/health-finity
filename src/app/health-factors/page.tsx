@@ -17,7 +17,7 @@ import { saveFamilyHistory } from "./actions";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "My health factors · HealthQuest" };
+export const metadata: Metadata = { title: "My health factors · Health-Finity" };
 
 function ageFrom(birthDate: string | null, today: string): number | null {
   if (!birthDate) return null;
@@ -153,7 +153,7 @@ export default async function HealthFactorsPage({ searchParams }: { searchParams
           )}
           {educationOnly ? (
             <p className="hq-micro" style={{ margin: 0 }}>
-              One of these keeps HealthQuest to general education, so it never builds a plan around it.
+              One of these keeps Health-Finity to general education, so it never builds a plan around it.
             </p>
           ) : null}
           <Link className="hq-section__action" href="/you/profile#topics">
@@ -185,7 +185,7 @@ export default async function HealthFactorsPage({ searchParams }: { searchParams
 
         <p className="hq-micro" style={{ margin: 0 }}>
           Clinicians use validated tools, such as the ASCVD risk estimator, that need lab results and measurements.
-          HealthQuest doesn&rsquo;t run them, so it never shows you a risk number.
+          Health-Finity doesn&rsquo;t run them, so it never shows you a risk number.
         </p>
       </div>
     </main>

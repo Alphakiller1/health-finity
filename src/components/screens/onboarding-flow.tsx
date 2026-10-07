@@ -225,7 +225,7 @@ export function OnboardingFlow({
     return (
       <div className="hq-onboard">
         <h1 className="hq-onboard__question" ref={headingRef} tabIndex={-1}>
-          HealthQuest is for adults
+          Health-Finity is for adults
         </h1>
         <p className="hq-secondary">
           This version is for people 18 and older in the United States. Nothing you entered has been saved.
@@ -269,9 +269,9 @@ export function OnboardingFlow({
         </div>
       ) : null}
 
-      <Step id="welcome" current={step} headingRef={headingRef} question="Let's set up HealthQuest for you">
+      <Step id="welcome" current={step} headingRef={headingRef} question="Let's set up Health-Finity for you">
         <p className="hq-secondary" style={{ margin: 0 }}>
-          HealthQuest helps you understand food, movement, sleep, and everyday habits — in plain language, from reviewed
+          Health-Finity helps you understand food, movement, sleep, and everyday habits — in plain language, from reviewed
           public-health sources. It doesn&rsquo;t diagnose or replace your doctor.
         </p>
         <ul className="hq-onboard__promises">
@@ -311,7 +311,7 @@ export function OnboardingFlow({
         current={step}
         headingRef={headingRef}
         question="When were you born?"
-        why="HealthQuest is for adults 18 and older in the United States. Your birth date is used only to confirm that."
+        why="Health-Finity is for adults 18 and older in the United States. Your birth date is used only to confirm that."
         changes="Nothing else. It isn't used to personalize anything."
       >
         <label className="hq-field">
@@ -422,7 +422,7 @@ export function OnboardingFlow({
           </fieldset>
           <fieldset className="hq-stack" style={{ gap: 8, border: 0, padding: 0, margin: 0 }}>
             <legend className="hq-field__label" style={{ margin: "8px 0 4px" }}>
-              How should HealthQuest talk about food?
+              How should Health-Finity talk about food?
             </legend>
             <HQChoice type="radio" name="gentleFoodMode" value="off" label="Show nutrition details" hint="Nutrients from USDA data when available" icon="book" />
             <HQChoice type="radio" name="gentleFoodMode" value="on" label="Gentle Food Mode" hint="No calorie or weight talk, no food scoring" icon="leaf" />
@@ -435,9 +435,9 @@ export function OnboardingFlow({
           id="topics"
           current={step}
           headingRef={headingRef}
-          question="Is there anything you'd like HealthQuest to keep in mind?"
-          why="Some topics get more relevant lessons. Others are complex enough that HealthQuest keeps to general education, so it never oversteps. Choosing none is completely fine."
-          changes="Which lessons and answers you see first, and how personal HealthQuest's suggestions are."
+          question="Is there anything you'd like Health-Finity to keep in mind?"
+          why="Some topics get more relevant lessons. Others are complex enough that Health-Finity keeps to general education, so it never oversteps. Choosing none is completely fine."
+          changes="Which lessons and answers you see first, and how personal Health-Finity's suggestions are."
         >
           <div className="hq-onboard__choices">
             {contexts.map((context) => (
@@ -473,7 +473,7 @@ export function OnboardingFlow({
           current={step}
           headingRef={headingRef}
           question="Any of these in close biological relatives?"
-          why="Family history is useful context to bring to a clinician. HealthQuest never turns it into a risk number."
+          why="Family history is useful context to bring to a clinician. Health-Finity never turns it into a risk number."
           changes="Family-history lessons come first. Only the category is stored, never anyone's name."
         >
           <div className="hq-onboard__choices">
@@ -526,7 +526,7 @@ export function OnboardingFlow({
         </Step>
       ) : null}
 
-      <Step id="review" current={step} headingRef={headingRef} question="Here's how HealthQuest will work for you">
+      <Step id="review" current={step} headingRef={headingRef} question="Here's how Health-Finity will work for you">
         {summary ? (
           <ul className="hq-onboard__review">
             <ReviewRow icon="spark" label="Focus" value={summary.goals.join(", ") || "Not set"} onEdit={() => jumpTo("goals")} />
@@ -571,9 +571,9 @@ export function OnboardingFlow({
             Before we begin, please agree to these
           </legend>
           <HQChoice name="aiConsent" required icon="compass" label="Relevant text I submit to the assistant may be processed by a third-party AI provider." />
-          <HQChoice name="healthDataConsent" required icon="shield" label="HealthQuest may store the health and wellness details I choose to enter." />
-          <HQChoice name="privacyAccepted" required icon="shield" label="HealthQuest does not sell health data." hint="Our privacy commitment" />
-          <HQChoice name="termsAccepted" required icon="book" label="HealthQuest provides education, not medical advice, diagnosis, or treatment." />
+          <HQChoice name="healthDataConsent" required icon="shield" label="Health-Finity may store the health and wellness details I choose to enter." />
+          <HQChoice name="privacyAccepted" required icon="shield" label="Health-Finity does not sell health data." hint="Our privacy commitment" />
+          <HQChoice name="termsAccepted" required icon="book" label="Health-Finity provides education, not medical advice, diagnosis, or treatment." />
         </fieldset>
       </Step>
 
@@ -581,7 +581,7 @@ export function OnboardingFlow({
         <div className="hq-onboard__actions">
           {step === "review" ? (
             <HQButton type="submit" variant="primary" trailingIcon="arrow-right">
-              Begin my HealthQuest
+              Start using Health-Finity
             </HQButton>
           ) : (
             <HQButton type="button" variant="primary" trailingIcon={editing ? "check" : "arrow-right"} onClick={next}>

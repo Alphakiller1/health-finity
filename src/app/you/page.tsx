@@ -15,7 +15,7 @@ import { usCalendarDate } from "@/lib/health/calendar";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "You · HealthQuest" };
+export const metadata: Metadata = { title: "You · Health-Finity" };
 
 /** Every mark, so unearned ones can show as quiet outlines of what's ahead. */
 const MARKS: { id: string; title: string; hint: string; symbol: HQIconName; tier: Tier }[] = [
@@ -41,7 +41,7 @@ export default async function YouPage() {
       <div className="hq-stack" style={{ gap: 40 }}>
         <header className="hq-page-head">
           <p className="hq-label">{user.email}</p>
-          <h1 className="hq-title">Your HealthQuest</h1>
+          <h1 className="hq-title">Your progress</h1>
           <p className="hq-secondary">{streak.message}</p>
         </header>
 

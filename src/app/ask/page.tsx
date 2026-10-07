@@ -7,7 +7,7 @@ import { askQuestion } from "./actions";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Ask · HealthQuest" };
+export const metadata: Metadata = { title: "Ask · Health-Finity" };
 
 export default async function AskPage() {
   const user = await requireOnboardedUser();

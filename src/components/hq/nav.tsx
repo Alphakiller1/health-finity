@@ -20,9 +20,9 @@ function useActive() {
 
 export function HQBrand({ href = "/today" }: { href?: string }) {
   return (
-    <Link className="hq-brand" href={href} aria-label="HealthQuest home">
+    <Link className="hq-brand" href={href} aria-label="Health-Finity home">
       <HQIcon name="path" />
-      <span aria-hidden>HealthQuest</span>
+      <span aria-hidden>Health-Finity</span>
     </Link>
   );
 }
@@ -68,7 +68,7 @@ export function HQTabBar() {
 export function HQSidebar({ footer }: { footer?: ReactNode }) {
   const isActive = useActive();
   return (
-    <aside className="hq-sidebar" aria-label="HealthQuest">
+    <aside className="hq-sidebar" aria-label="Health-Finity">
       <HQBrand />
       <nav className="hq-sidebar__nav" aria-label="Primary">
         {DESTINATIONS.map((item) => (

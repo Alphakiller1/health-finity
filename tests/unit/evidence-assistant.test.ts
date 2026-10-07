@@ -42,7 +42,7 @@ describe("evidence claims", () => {
     }
   });
 
-  it("no claim trips HealthQuest's own output checks, even in Gentle Food Mode where it would be offered", () => {
+  it("no claim trips Health-Finity's own output checks, even in Gentle Food Mode where it would be offered", () => {
     for (const claim of activeClaims()) {
       const gentleEligible = !/calorie/i.test(claim.claim);
       const result = validateAssistantResponse(
@@ -82,7 +82,7 @@ describe("evidence selection", () => {
     expect(claims.some((claim) => /calorie/i.test(claim.claim))).toBe(false);
   });
 
-  it("returns nothing for topics HealthQuest has not reviewed", () => {
+  it("returns nothing for topics Health-Finity has not reviewed", () => {
     expect(select("what is the capital of france").claims).toHaveLength(0);
   });
 });

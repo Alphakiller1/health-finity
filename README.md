@@ -1,4 +1,4 @@
-# HealthQuest AI
+# Health-Finity
 
 Educational wellness app for adults in the United States. It explains food, movement, sleep, and habits. It does not diagnose, prescribe, or replace a clinician.
 

@@ -44,4 +44,4 @@ export interface HealthAssistantProvider {
 }
 
 export const REQUIRED_DISCLAIMER =
-  "HealthQuest provides educational wellness information, not medical advice, diagnosis, or treatment. For medical decisions, talk with a qualified healthcare professional.";
+  "Health-Finity provides educational wellness information, not medical advice, diagnosis, or treatment. For medical decisions, talk with a qualified healthcare professional.";

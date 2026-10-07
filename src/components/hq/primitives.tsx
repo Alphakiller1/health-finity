@@ -306,7 +306,7 @@ export function HQCallout({
   );
 }
 
-/** Reserved for real safety messages. The only loud red in HealthQuest. */
+/** Reserved for real safety messages. The only loud red in Health-Finity. */
 export function HQSafetyBanner({
   message,
   actions,

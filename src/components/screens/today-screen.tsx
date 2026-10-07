@@ -30,7 +30,7 @@ const LOG = [
 ] as const;
 
 /**
- * The emotional centre of HealthQuest. It answers three questions in order:
+ * The emotional centre of Health-Finity. It answers three questions in order:
  * where am I, what is one useful thing to do, and am I making progress.
  * One action dominates; everything else is a tap away but quieter.
  */
@@ -170,7 +170,7 @@ export function TodayScreen({
             <Link href="/you/profile" className="hq-today__nudge">
               <HQGlyph name="compass" tone="brand" />
               <span>
-                <span className="hq-today__win-title">Shape HealthQuest around you</span>
+                <span className="hq-today__win-title">Shape Health-Finity around you</span>
                 <span className="hq-micro" style={{ display: "block" }}>
                   A few optional answers size your quests and pick your lessons.
                 </span>

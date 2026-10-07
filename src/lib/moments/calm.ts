@@ -47,7 +47,7 @@ export const CALM_TOOLS: Record<CalmTool, { title: string; minutes: number; summ
   write: {
     title: "Write one sentence",
     minutes: 2,
-    summary: "Write what's on your mind, on paper or in your phone. HealthQuest doesn't save it.",
+    summary: "Write what's on your mind, on paper or in your phone. Health-Finity doesn't save it.",
     claimIds: ["stress.journal"],
   },
   reframe: {

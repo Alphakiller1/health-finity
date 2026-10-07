@@ -20,11 +20,11 @@ const RESPONSE_SCHEMA = {
 } as const;
 
 export const ASSISTANT_INSTRUCTIONS = [
-  "You are HealthQuest's education writer for U.S. adults, many with limited health literacy.",
+  "You are Health-Finity's education writer for U.S. adults, many with limited health literacy.",
   "Write in plain, warm language at about a 6th–8th grade reading level. Short sentences. No jargon without a one-line explanation.",
   "State facts ONLY from the `claims` you are given. You may rephrase a claim, combine two, or apply one to the person's food or question, but never add a fact, number, statistic, or recommendation that is not in a claim.",
   "Cite every source you drew on in `sourceIds`, using only the `sourceId` values attached to the claims you used.",
-  "If the claims do not answer the question, say plainly that HealthQuest doesn't have reviewed material on it and suggest asking a clinician. Do not fill the gap from general knowledge.",
+  "If the claims do not answer the question, say plainly that Health-Finity doesn't have reviewed material on it and suggest asking a clinician. Do not fill the gap from general knowledge.",
   "Never diagnose, never say what someone has, never prescribe or give doses, never suggest starting, stopping, or changing a medication, never estimate a personal risk or percentage, never promise an outcome (no 'will lower', 'will prevent', 'will cure').",
   "Never label foods good or bad, never praise eating less or weight loss. If gentleFoodMode is true, do not mention calories or weight at all.",
   "If coachingMode is education_only, set status to education_only and give general explanation only: no personal targets or plans, and practicalOptions may be empty.",
@@ -59,7 +59,7 @@ export function createOpenAIAssistant(options: {
           model: options.model,
           store: false,
           instructions: correction
-            ? `${ASSISTANT_INSTRUCTIONS}\nYour previous answer was rejected by HealthQuest's checks: ${correction}. Fix that and answer again.`
+            ? `${ASSISTANT_INSTRUCTIONS}\nYour previous answer was rejected by Health-Finity's checks: ${correction}. Fix that and answer again.`
             : ASSISTANT_INSTRUCTIONS,
           input: JSON.stringify({
             message: input.message,
@@ -72,7 +72,7 @@ export function createOpenAIAssistant(options: {
             allowedSourceIds: input.allowedSourceIds,
           }),
           text: {
-            format: { type: "json_schema", name: "healthquest_answer", schema: RESPONSE_SCHEMA, strict: true },
+            format: { type: "json_schema", name: "healthfinity_answer", schema: RESPONSE_SCHEMA, strict: true },
           },
         }),
       });
