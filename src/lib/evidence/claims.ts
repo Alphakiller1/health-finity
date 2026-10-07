@@ -11,7 +11,7 @@ export type ClaimKind =
   | "explain" // what something is
   | "pattern" // what population guidance associates with it
   | "practical" // an option a person could try
-  | "boundary" // what HealthQuest can and cannot tell you
+  | "boundary" // what Health-Finity can and cannot tell you
   | "ask"; // a question to bring to a clinician
 
 export type EvidenceClaim = {
@@ -78,7 +78,7 @@ export const EVIDENCE_CLAIMS: readonly EvidenceClaim[] = [
   c("sleep.track", "nhlbi-sleep", ["sleep", "track", "log", "pattern"], "practical",
     "Tracking a few nights can help you notice your own sleep pattern."),
   c("sleep.boundary", "nhlbi-sleep", ["sleep", "insomnia", "disorder", "apnea"], "boundary",
-    "A sleep log is a record of your pattern. HealthQuest does not diagnose a sleep disorder from a log."),
+    "A sleep log is a record of your pattern. Health-Finity does not diagnose a sleep disorder from a log."),
 
   // Movement
   c("move.guidance", "odphp-physical-activity", ["movement", "exercise", "activity", "walk", "fitness"], "pattern",
@@ -86,7 +86,7 @@ export const EVIDENCE_CLAIMS: readonly EvidenceClaim[] = [
   c("move.counts", "odphp-physical-activity", ["movement", "exercise", "walk", "chores", "workout"], "practical",
     "A walk, chores, or a short workout can all count as movement you chose."),
   c("move.boundary", "odphp-physical-activity", ["movement", "calories burned", "exercise"], "boundary",
-    "HealthQuest records the activity and duration you enter. It does not calculate calories burned or decide whether a session was enough."),
+    "Health-Finity records the activity and duration you enter. It does not calculate calories burned or decide whether a session was enough."),
 
   // Movement guidelines, quoted closely from ODPHP's "Top 10 things to know" (checked 2026-09-25)
   c("move.sit_less", "odphp-top-10", ["movement", "sitting", "desk", "exercise"], "pattern",
@@ -163,7 +163,7 @@ export const EVIDENCE_CLAIMS: readonly EvidenceClaim[] = [
 
   // Diabetes (general only)
   c("diabetes.general", "ada-home", ["diabetes", "prediabetes", "blood sugar", "glucose", "a1c"], "boundary",
-    "Diabetes and prediabetes are managed with a healthcare team. HealthQuest can explain terms but does not set blood-sugar targets.", true),
+    "Diabetes and prediabetes are managed with a healthcare team. Health-Finity can explain terms but does not set blood-sugar targets.", true),
 ];
 
 export function activeClaims(): EvidenceClaim[] {

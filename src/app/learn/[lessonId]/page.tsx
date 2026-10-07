@@ -18,7 +18,7 @@ export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }: { params: Promise<{ lessonId: string }> }): Promise<Metadata> {
   const lesson = getLesson((await params).lessonId);
-  return { title: lesson ? `${lesson.title} · HealthQuest` : "Lesson · HealthQuest" };
+  return { title: lesson ? `${lesson.title} · Health-Finity` : "Lesson · Health-Finity" };
 }
 
 export default async function LessonPage({

@@ -43,7 +43,7 @@ export type RecordMealResult =
   | { status: "invalid"; message: string };
 
 const DISCLAIMER =
-  "HealthQuest provides educational wellness information, not medical advice, diagnosis, or treatment. For medical decisions, talk with a qualified healthcare professional.";
+  "Health-Finity provides educational wellness information, not medical advice, diagnosis, or treatment. For medical decisions, talk with a qualified healthcare professional.";
 
 function oneOf<T extends string>(value: string | undefined, allowed: readonly T[]): T | undefined {
   return allowed.includes(value as T) ? (value as T) : undefined;

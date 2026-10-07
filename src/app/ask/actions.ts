@@ -73,7 +73,7 @@ async function askQuestionAction(formData: FormData): Promise<AskResult> {
       id,
       kind: "unavailable",
       question,
-      message: "HealthQuest couldn't produce an answer that passed its checks. Try asking a different way, or bring this question to a clinician.",
+      message: "Health-Finity couldn't produce an answer that passed its checks. Try asking a different way, or bring this question to a clinician.",
     };
   }
 

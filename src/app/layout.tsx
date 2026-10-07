@@ -19,9 +19,9 @@ const serif = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "HealthQuest AI",
-  applicationName: "HealthQuest",
-  appleWebApp: { capable: true, title: "HealthQuest", statusBarStyle: "default" },
+  title: "Health-Finity",
+  applicationName: "Health-Finity",
+  appleWebApp: { capable: true, title: "Health-Finity", statusBarStyle: "default" },
   formatDetection: { telephone: false },
   description:
     "Educational wellness guidance for adults. Not medical advice, diagnosis, or treatment.",

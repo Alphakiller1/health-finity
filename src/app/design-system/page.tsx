@@ -26,7 +26,7 @@ import type { TodayModel } from "@/lib/today/today";
 import { QUEST_PRESENTATION } from "@/lib/today/today";
 import { FeedbackDemo } from "./feedback-demo";
 
-export const metadata: Metadata = { title: "Design system · HealthQuest" };
+export const metadata: Metadata = { title: "Design system · Health-Finity" };
 
 const SECTIONS = [
   ["principles", "Principles"],
@@ -176,11 +176,11 @@ export default function DesignSystemPage() {
       <div className="hq-ds">
         <header className="hq-page-head">
           <p className="hq-label hq-cluster" style={{ gap: 6 }}>
-            <HQIcon name="path" size={16} className="hq-tint-brand" /> HealthQuest design system
+            <HQIcon name="path" size={16} className="hq-tint-brand" /> Health-Finity design system
           </p>
           <h1 className="hq-display">Progress through understanding.</h1>
           <p className="hq-secondary" style={{ maxWidth: "40rem" }}>
-            The visual reference for every HealthQuest screen. If a component looks wrong here, it looks wrong everywhere.
+            The visual reference for every Health-Finity screen. If a component looks wrong here, it looks wrong everywhere.
             Tokens live in <code>src/styles</code>, components in <code>src/components/hq</code>, rationale in{" "}
             <code>docs/design-system.md</code>.
           </p>
@@ -269,7 +269,7 @@ export default function DesignSystemPage() {
           </div>
         </Section>
 
-        <Section id="icons" title="Symbols" lede="Drawn for HealthQuest on one 24px grid with a 1.75 stroke and round joins. Path, spark, and marker are the signatures; the heart is used sparingly.">
+        <Section id="icons" title="Symbols" lede="Drawn for Health-Finity on one 24px grid with a 1.75 stroke and round joins. Path, spark, and marker are the signatures; the heart is used sparingly.">
           <div className="hq-ds__grid" style={{ "--hq-ds-min": "6.5rem" } as CSSProperties}>
             {ICON_NAMES.map((name) => (
               <div key={name} className="hq-stack" style={{ gap: 6, alignItems: "center", padding: "14px 4px", border: "1px solid var(--hq-line)", borderRadius: "var(--hq-radius-md)" }}>
@@ -294,7 +294,7 @@ export default function DesignSystemPage() {
             <HQButton variant="quiet">Not this week</HQButton>
             <HQButton variant="primary" size="sm">Small primary</HQButton>
             <HQButton disabled>Disabled</HQButton>
-            <button className="hq-icon-btn hq-icon-btn--outlined" type="button" aria-label="Ask HealthQuest">
+            <button className="hq-icon-btn hq-icon-btn--outlined" type="button" aria-label="Ask Health-Finity">
               <HQIcon name="compass" />
             </button>
           </div>
@@ -454,7 +454,7 @@ export default function DesignSystemPage() {
               <div key={theme} data-theme={theme} className="hq-ds__frame hq-stack">
                 <span className="hq-label">{theme === "light" ? "Light" : "Dark"}</span>
                 <HQQuestCard quest={SAMPLE_QUEST} emphasis="quiet" headingLevel={3} />
-                <HQCallout tone="positive" title="Nice. You showed up today." >One more step on your HealthQuest.</HQCallout>
+                <HQCallout tone="positive" title="Nice. You showed up today." >One more step for you.</HQCallout>
               </div>
             ))}
             <div className="hq-ds__frame hq-stack hq-contrast">

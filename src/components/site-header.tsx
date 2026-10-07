@@ -7,7 +7,7 @@ export async function SiteHeader() {
     <header className="border-b border-zinc-200">
       <div className="mx-auto flex w-full max-w-3xl flex-wrap items-center gap-x-4 gap-y-2 px-6 py-3">
         <Link href={session ? "/dashboard" : "/"} className="font-semibold text-teal-900">
-          HealthQuest
+          Health-Finity
         </Link>
         {session ? (
           <nav aria-label="Primary" className="flex flex-wrap gap-x-4 gap-y-1 text-sm">

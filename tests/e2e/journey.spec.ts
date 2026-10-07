@@ -6,7 +6,7 @@ test("adult can onboard, log, learn, export, see an emergency screen, and delete
   await page.getByLabel("Email").fill(email);
   await page.getByRole("button", { name: "Continue in demo" }).click();
   // Onboarding: the full "Make it mine" path, one question per screen, most of it skippable.
-  await expect(page.getByRole("heading", { name: "Let's set up HealthQuest for you" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Let's set up Health-Finity for you" })).toBeVisible();
   await page.getByRole("button", { name: /Make it mine/ }).click();
   await page.getByLabel("Birth date").fill("1990-01-15");
   await page.getByRole("button", { name: "Continue" }).click();
@@ -18,13 +18,13 @@ test("adult can onboard, log, learn, export, see an emergency screen, and delete
   for (let skipped = 0; skipped < 5; skipped += 1) await page.getByRole("button", { name: "Skip" }).click();
   await page.getByRole("button", { name: "Continue" }).click();
   // The review shows the effect of the answers before anything is saved.
-  await expect(page.getByRole("heading", { name: "Here's how HealthQuest will work for you" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Here's how Health-Finity will work for you" })).toBeVisible();
   await expect(page.getByText("2 sessions a week")).toBeVisible();
   await page.getByRole("checkbox", { name: /third-party AI provider/ }).check();
   await page.getByRole("checkbox", { name: /store the health and wellness/ }).check();
   await page.getByRole("checkbox", { name: /privacy commitment/ }).check();
   await page.getByRole("checkbox", { name: /not medical advice/ }).check();
-  await page.getByRole("button", { name: "Begin my HealthQuest" }).click();
+  await page.getByRole("button", { name: "Start using Health-Finity" }).click();
   await expect(page.getByRole("heading", { level: 1, name: /^Good (morning|afternoon|evening)/ })).toBeVisible();
   await expect(page.getByRole("list", { name: /This week/ })).toBeVisible();
   // The shell lives in the root layout; it must show the tabs right after onboarding, without a reload.
@@ -103,7 +103,7 @@ test("adult can onboard, log, learn, export, see an emergency screen, and delete
     page.waitForEvent("download"),
     page.getByRole("link", { name: "Export my data" }).click(),
   ]);
-  expect(download[0].suggestedFilename()).toContain("healthquest-export");
+  expect(download[0].suggestedFilename()).toContain("health-finity-export");
 
   await page.goto("/journal");
   await page.getByRole("textbox", { name: "Food", exact: true }).fill("I can't breathe");

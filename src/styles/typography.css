@@ -9,15 +9,15 @@
   --hq-font-sans: var(--font-hq-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --hq-font-serif: var(--font-hq-serif), ui-serif, Georgia, "Times New Roman", serif;
 
-  --hq-text-display: clamp(1.875rem, 1.5rem + 1.6vw, 2.5rem);
-  --hq-text-title: 1.5rem;
-  --hq-text-section: 1.0625rem;
-  --hq-text-body: 1rem;
-  --hq-text-reading: 1.1875rem;
-  --hq-text-secondary-size: 0.9375rem;
-  --hq-text-label: 0.8125rem;
-  --hq-text-micro: 0.75rem;
-  --hq-text-numeric-lg: 1.75rem;
+  --hq-text-display: clamp(2rem, 1.6rem + 1.6vw, 2.625rem);
+  --hq-text-title: 1.625rem;
+  --hq-text-section: 1.1875rem;
+  --hq-text-body: 1.125rem;
+  --hq-text-reading: 1.25rem;
+  --hq-text-secondary-size: 1.0625rem;
+  --hq-text-label: 0.9375rem;
+  --hq-text-micro: 0.875rem;
+  --hq-text-numeric-lg: 1.875rem;
 
   --hq-leading-tight: 1.15;
   --hq-leading-snug: 1.3;

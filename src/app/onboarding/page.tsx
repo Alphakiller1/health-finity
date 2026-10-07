@@ -25,7 +25,7 @@ export default async function OnboardingPage({
   if (params.stopped === "age" || user.blockedUnder18) {
     return (
       <main className="hq-onboard">
-        <h1 className="hq-onboard__question">HealthQuest is for adults</h1>
+        <h1 className="hq-onboard__question">Health-Finity is for adults</h1>
         <p className="hq-secondary">
           This version is for people age 18 and older in the United States. No additional health information was saved.
         </p>

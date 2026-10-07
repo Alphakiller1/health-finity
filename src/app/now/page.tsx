@@ -8,7 +8,7 @@ import { dailyTip, momentForHour } from "@/lib/moments/daily";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Now · HealthQuest" };
+export const metadata: Metadata = { title: "Now · Health-Finity" };
 
 const TOOLS: { href: string; title: string; body: string; icon: HQIconName; tone: "sun" | "brand" | "night" | "info" }[] = [
   { href: "/now/food", title: "Choose food", body: "Tips for where you are, or compare two foods", icon: "bowl", tone: "sun" },

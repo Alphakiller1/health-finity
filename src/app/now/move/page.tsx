@@ -9,7 +9,7 @@ import { completeMoment } from "../actions";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Move a little · HealthQuest" };
+export const metadata: Metadata = { title: "Move a little · Health-Finity" };
 
 export default async function NowMovePage({ searchParams }: { searchParams: Promise<{ minutes?: string }> }) {
   const user = await requireOnboardedUser();

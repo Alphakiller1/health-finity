@@ -30,7 +30,7 @@ export function HQAssistantResponse({
     .filter((source): source is NonNullable<typeof source> => Boolean(source));
 
   return (
-    <article className="hq-answer" aria-label="HealthQuest answer">
+    <article className="hq-answer" aria-label="Health-Finity answer">
       <header className="hq-answer__question">
         <span className="hq-label">{questionLabel ?? (sample ? "Example question" : "You asked")}</span>
         <p>{question}</p>

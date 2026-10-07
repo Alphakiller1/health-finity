@@ -1,5 +1,5 @@
 /*
- * HealthQuest design tokens.
+ * Health-Finity design tokens.
  * Components read semantic tokens only. Raw values live here and nowhere else.
  * Light is the default; dark applies from the OS unless the person picks a theme
  * (data-theme on <html>, or on any subtree for previews).
@@ -16,13 +16,13 @@
   --hq-bg-interactive: #e6e1d4;
   --hq-bg-inverse: #1b2420;
 
-  --hq-line: #e0d9ca;
-  --hq-line-strong: #c9c0ad;
+  --hq-line: #d2c9b6;
+  --hq-line-strong: #857b69;
 
   /* Ink: green-black, never pure black */
   --hq-text-primary: #1b2420;
-  --hq-text-secondary: #46514b;
-  --hq-text-muted: #5b645d;
+  --hq-text-secondary: #36403a;
+  --hq-text-muted: #454e48;
   --hq-text-inverse: #f4f1e9;
 
   /* Brand: fern — fresh, not clinical, not neon */
@@ -85,8 +85,8 @@
   --hq-shadow-high: 0 12px 40px rgb(27 36 32 / 0.16);
 
   /* Hit targets */
-  --hq-target: 44px;
-  --hq-target-lg: 48px;
+  --hq-target: 3rem; /* 48px at Standard; grows with text size */
+  --hq-target-lg: 3.5rem; /* 56px: primary actions and form fields */
 
   /* Layout */
   --hq-content: 40rem;
@@ -111,11 +111,11 @@
     --hq-bg-soft: #1a221e;
     --hq-bg-interactive: #26312b;
     --hq-bg-inverse: #ece8df;
-    --hq-line: #29332e;
-    --hq-line-strong: #3a4640;
+    --hq-line: #34403a;
+    --hq-line-strong: #6f7d75;
     --hq-text-primary: #ebe7de;
-    --hq-text-secondary: #bdc2b9;
-    --hq-text-muted: #969d94;
+    --hq-text-secondary: #cdd1c9;
+    --hq-text-muted: #aab1a8;
     --hq-text-inverse: #111714;
     --hq-brand: #6cc493;
     --hq-brand-strong: #6cc493;
@@ -155,11 +155,11 @@
   --hq-bg-soft: #1a221e;
   --hq-bg-interactive: #26312b;
   --hq-bg-inverse: #ece8df;
-  --hq-line: #29332e;
-  --hq-line-strong: #3a4640;
+  --hq-line: #34403a;
+  --hq-line-strong: #6f7d75;
   --hq-text-primary: #ebe7de;
-  --hq-text-secondary: #bdc2b9;
-  --hq-text-muted: #969d94;
+  --hq-text-secondary: #cdd1c9;
+  --hq-text-muted: #aab1a8;
   --hq-text-inverse: #111714;
   --hq-brand: #6cc493;
   --hq-brand-strong: #6cc493;

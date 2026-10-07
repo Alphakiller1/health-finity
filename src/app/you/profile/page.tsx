@@ -20,7 +20,7 @@ import { saveProfile } from "./actions";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Health profile · HealthQuest" };
+export const metadata: Metadata = { title: "Health profile · Health-Finity" };
 
 const GOAL_ICONS: Record<string, HQIconName> = {
   understand_nutrition: "bowl",
@@ -56,7 +56,7 @@ export default async function ProfilePage({ searchParams }: { searchParams: Prom
           </Link>
           <h1 className="hq-title">Your health profile</h1>
           <p className="hq-secondary">
-            Everything here is optional and shapes what HealthQuest shows you. It never becomes a score, and you can
+            Everything here is optional and shapes what Health-Finity shows you. It never becomes a score, and you can
             change or clear it any time.
           </p>
         </header>
@@ -187,8 +187,8 @@ export default async function ProfilePage({ searchParams }: { searchParams: Prom
           <Section firstOpen={firstOpen}
             id="topics"
             current={contexts.length ? `${contexts.length} chosen` : profile.updatedAt ? "None chosen" : undefined}
-            title="Health topics you'd like HealthQuest to keep in mind"
-            changes="Shapes which lessons and answers you see. Some topics get general education only, so HealthQuest never oversteps."
+            title="Health topics you'd like Health-Finity to keep in mind"
+            changes="Shapes which lessons and answers you see. Some topics get general education only, so Health-Finity never oversteps."
           >
             {HEALTH_CONTEXTS.map((context) => (
               <HQChoice
@@ -215,7 +215,7 @@ export default async function ProfilePage({ searchParams }: { searchParams: Prom
             ))}
           </Section>
 
-          <Section firstOpen={firstOpen} id="reading" current={[user.gentleFoodMode || gentleLocked ? "Gentle Food Mode" : null, user.plainLanguage ? "Plain language" : null].filter(Boolean).join(", ") || (profile.updatedAt ? "Standard" : undefined)} title="How should HealthQuest talk to you?" changes="Changes how lessons and food notes are written.">
+          <Section firstOpen={firstOpen} id="reading" current={[user.gentleFoodMode || gentleLocked ? "Gentle Food Mode" : null, user.plainLanguage ? "Plain language" : null].filter(Boolean).join(", ") || (profile.updatedAt ? "Standard" : undefined)} title="How should Health-Finity talk to you?" changes="Changes how lessons and food notes are written.">
             <HQChoice
               name="gentleFoodMode"
               label="Gentle Food Mode"

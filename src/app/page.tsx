@@ -10,7 +10,7 @@ import { getDemoStore } from "@/lib/demo/store";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "HealthQuest — understand one more thing about your health",
+  title: "Health-Finity — understand one more thing about your health",
   description: "Plain-language health education for adults: food, movement, sleep, and everyday habits, from reviewed public-health sources.",
 };
 
@@ -28,12 +28,12 @@ const PROMISES: { icon: HQIconName; title: string; body: string }[] = [
   {
     icon: "leaf",
     title: "Affordability",
-    body: "Ordinary foods like beans, oats, and frozen vegetables come first. You can note what a meal cost; HealthQuest doesn't look up store prices.",
+    body: "Ordinary foods like beans, oats, and frozen vegetables come first. You can note what a meal cost; Health-Finity doesn't look up store prices.",
   },
   {
     icon: "book",
     title: "Privacy",
-    body: "Health details stay limited to what a feature needs. You can export or delete everything. HealthQuest doesn't sell health data.",
+    body: "Health details stay limited to what a feature needs. You can export or delete everything. Health-Finity doesn't sell health data.",
   },
   {
     icon: "compass",
@@ -52,13 +52,13 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ d
       {deleted ? (
         <div role="status">
           <HQCallout tone="positive" title="Your account and data were deleted">
-            Thank you for trying HealthQuest. You&rsquo;re welcome back any time.
+            Thank you for trying Health-Finity. You&rsquo;re welcome back any time.
           </HQCallout>
         </div>
       ) : null}
 
       <section className="hq-landing__hero" aria-labelledby="hero-title">
-        <p className="hq-label">HealthQuest</p>
+        <p className="hq-label">Health-Finity</p>
         <h1 id="hero-title" className="hq-display">
           Learn one useful thing about your health today.
         </h1>
@@ -68,7 +68,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ d
         </p>
         <div className="hq-landing__actions">
           <Link href="/login" className="hq-btn hq-btn--primary">
-            Start your HealthQuest
+            Get started
             <HQIcon name="arrow-right" />
           </Link>
           <a href="#how-it-works" className="hq-btn">
@@ -87,7 +87,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ d
         <HQPath
           orientation="vertical"
           size="lg"
-          label="How HealthQuest works, in three steps"
+          label="How Health-Finity works, in three steps"
           nodes={[
             {
               state: "done",
@@ -144,7 +144,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ d
           Setup takes one to four minutes, and you choose how much to share.
         </p>
         <Link href="/login" className="hq-btn hq-btn--primary hq-btn--block">
-          Start your HealthQuest
+          Get started
         </Link>
       </section>
 

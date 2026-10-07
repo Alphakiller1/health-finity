@@ -9,7 +9,7 @@ import { completeMoment } from "../actions";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Feel calmer · HealthQuest" };
+export const metadata: Metadata = { title: "Feel calmer · Health-Finity" };
 
 export default async function NowCalmPage({ searchParams }: { searchParams: Promise<{ tool?: string }> }) {
   await requireOnboardedUser();

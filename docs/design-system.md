@@ -1,6 +1,6 @@
-# HealthQuest design system
+# Health-Finity design system
 
-HealthQuest should feel like a companion helping someone understand themselves, not software grading their health. Every decision below supports one feeling: *you don't need to transform your life today — just understand one more thing and take one more step.*
+Health-Finity should feel like a companion helping someone understand themselves, not software grading their health. Every decision below supports one feeling: *you don't need to transform your life today — just understand one more thing and take one more step.*
 
 The live reference is **`/design-system`** (development only; set `HQ_DESIGN_SYSTEM=1` to serve it in production). Treat it as the visual regression page: if a component looks wrong there, it looks wrong everywhere.
 
@@ -30,7 +30,7 @@ The live reference is **`/design-system`** (development only; set `HQ_DESIGN_SYS
 6. **Copy sounds like a thoughtful coach.** Short, specific, never shaming.
 7. **Plain language first.** Someone with low health literacy follows every screen.
 
-Before calling a screen done, ask: would it still be HealthQuest without the logo? Is every card necessary? Is there one clear action? Does anything look like a default component library? Does the person feel supported, not judged?
+Before calling a screen done, ask: would it still be Health-Finity without the logo? Is every card necessary? Is there one clear action? Does anything look like a default component library? Does the person feel supported, not judged?
 
 ## Color
 
@@ -106,7 +106,7 @@ Icons are decorative (`aria-hidden`) unless given a `label`, and are only labell
 
 Walked links are solid, and each one bows in a slight arc (the soft-arc motif). The road ahead is dotted. Every node has a distinct shape and a spoken state, so meaning never depends on color alone.
 
-It appears in the Today week, quest progress, onboarding progress, levels, lesson sections (vertical), the quests overview (vertical), the assistant's "Try this" steps, empty states, and the loader. That repetition is what makes HealthQuest recognisable without the logo. The active tab even sits under a small node.
+It appears in the Today week, quest progress, onboarding progress, levels, lesson sections (vertical), the quests overview (vertical), the assistant's "Try this" steps, empty states, and the loader. That repetition is what makes Health-Finity recognisable without the logo. The active tab even sits under a small node.
 
 ## Reinforcement
 

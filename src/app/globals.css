@@ -7,7 +7,7 @@
 @import "../styles/screens.css";
 
 /*
- * Tailwind reads the HealthQuest tokens, so layout utilities and any legacy
+ * Tailwind reads the Health-Finity tokens, so layout utilities and any legacy
  * page classes resolve to the same system. Prefer components over raw
  * utilities for anything visual.
  */

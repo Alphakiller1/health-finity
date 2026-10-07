@@ -17,7 +17,7 @@ export const DEMO_FOODS: readonly NutritionFood[] = [
     sodium: 60,
     sugars: 0,
     retrievedAt,
-    sourceDataset: "healthquest-demo-fixture",
+    sourceDataset: "health-finity-demo-fixture",
     demo: true,
   },
   {
@@ -33,7 +33,7 @@ export const DEMO_FOODS: readonly NutritionFood[] = [
     sodium: 0,
     sugars: 1,
     retrievedAt,
-    sourceDataset: "healthquest-demo-fixture",
+    sourceDataset: "health-finity-demo-fixture",
     demo: true,
   },
   {
@@ -49,7 +49,7 @@ export const DEMO_FOODS: readonly NutritionFood[] = [
     sodium: 280,
     sugars: 1,
     retrievedAt,
-    sourceDataset: "healthquest-demo-fixture",
+    sourceDataset: "health-finity-demo-fixture",
     demo: true,
   },
   {
@@ -65,7 +65,7 @@ export const DEMO_FOODS: readonly NutritionFood[] = [
     sodium: 2,
     sugars: 19,
     retrievedAt,
-    sourceDataset: "healthquest-demo-fixture",
+    sourceDataset: "health-finity-demo-fixture",
     demo: true,
   },
 ];

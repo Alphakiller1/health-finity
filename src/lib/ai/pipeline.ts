@@ -28,7 +28,7 @@ export type AssistantTurnResult =
     };
 
 const FALLBACK_SUMMARY =
-  "I can only share general wellness education that passes HealthQuest safety checks. Please try rephrasing, or talk with a qualified healthcare professional about this.";
+  "I can only share general wellness education that passes Health-Finity safety checks. Please try rephrasing, or talk with a qualified healthcare professional about this.";
 
 export async function runAssistantPipeline(
   input: SafeAssistantInput,

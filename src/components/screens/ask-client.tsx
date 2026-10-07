@@ -59,7 +59,7 @@ export function AskClient({
       } catch {
         setThread((items) => [
           ...items,
-          { id: crypto.randomUUID(), kind: "unavailable", question: text, message: "Something went wrong reaching HealthQuest. Try again in a moment." },
+          { id: crypto.randomUUID(), kind: "unavailable", question: text, message: "Something went wrong reaching Health-Finity. Try again in a moment." },
         ]);
       } finally {
         setPendingQuestion(null);
@@ -74,7 +74,7 @@ export function AskClient({
       <header className="hq-page-head">
         <p className="hq-label hq-cluster" style={{ gap: 6 }}>
           <HQIcon name="compass" size={16} className="hq-tint-brand" />
-          Ask HealthQuest
+          Ask Health-Finity
         </p>
         <h1 className="hq-display" style={{ fontSize: "2rem" }}>
           What would you like to understand?
@@ -88,8 +88,8 @@ export function AskClient({
         <>
           <HQCallout tone="neutral" icon="shield" title={madeByAi ? "How answers are made" : "Answers from reviewed sources"}>
             {madeByAi
-              ? "An AI model writes each answer using only statements HealthQuest has reviewed, and every answer is checked before you see it. Only your question and the topics you chose are sent — never your name or email."
-              : "Each answer is put together from statements HealthQuest has reviewed against public-health sources. Nothing you type is sent to an AI provider."}
+              ? "An AI model writes each answer using only statements Health-Finity has reviewed, and every answer is checked before you see it. Only your question and the topics you chose are sent — never your name or email."
+              : "Each answer is put together from statements Health-Finity has reviewed against public-health sources. Nothing you type is sent to an AI provider."}
           </HQCallout>
           <section className="hq-stack" style={{ gap: 10 }} aria-labelledby="prompts-title">
             <h2 id="prompts-title" className="hq-label" style={{ margin: 0 }}>

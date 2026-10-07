@@ -21,7 +21,7 @@ import { encouragement } from "@/lib/moments/encouragement";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Meals · HealthQuest" };
+export const metadata: Metadata = { title: "Meals · Health-Finity" };
 
 export default async function JournalPage({
   searchParams,

@@ -12,7 +12,7 @@ import { completeMoment } from "../actions";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = { title: "Choose food · HealthQuest" };
+export const metadata: Metadata = { title: "Choose food · Health-Finity" };
 
 export default async function NowFoodPage() {
   const user = await requireOnboardedUser();
